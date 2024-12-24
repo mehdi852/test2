@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <script 
-        src="hhttps://popup-teal-two.vercel.app/fa.js" 
-        data-website-id="308961" 
+        src="https://popup-teal-two.vercel.app/fa.js" 
+        data-website-id="824723" 
         data-api-url="https://popup-teal-two.vercel.app/"
         async
     ></script>
