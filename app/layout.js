@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 const geistSans = Geist({
@@ -19,10 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <head>
-                <script src="https://popup3-vblq.vercel.app/fa.js" data-website-id="128172" data-api-url="https://popup3-vblq.vercel.app" async></script>{' '}
-            </head>
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+                {children}
+                <Script src="https://popup3-vblq.vercel.app/fa.js" data-website-id="128172" data-api-url="https://popup3-vblq.vercel.app" />
+            </body>
         </html>
     );
 }
